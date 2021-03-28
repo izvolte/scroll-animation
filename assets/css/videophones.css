@@ -1,0 +1,350 @@
+@import url(fonts.css);
+* {
+  margin: unset;
+  padding: unset;
+  box-sizing: border-box;
+  margin-block-start: unset;
+  margin-block-end: unset; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  position: relative;
+  padding-top: 3.2813vw;
+  overflow-X: hidden;
+  font-family: "Noto Sans"; }
+
+.js-anim {
+  opacity: 0; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+.content {
+  flex: 1 0 auto;
+  overflow: hidden; }
+
+.footer {
+  flex: 0 0 auto; }
+
+.ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+a:-webkit-any-link {
+  color: unset; }
+
+iframe {
+  border: none; }
+
+.hidden {
+  display: none !important; }
+
+.overflow {
+  overflow: hidden !important; }
+
+.opacity {
+  opacity: 0; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 3.2813vw;
+  background: url("../img/header.jpg") center no-repeat;
+  background-size: cover;
+  z-index: 1000; }
+
+.footer {
+  width: 100vw;
+  height: 34.4792vw;
+  background: url("../img/footer.jpg") center no-repeat;
+  background-size: cover; }
+
+.h1 {
+  font-size: 3.125vw;
+  color: #1d1d1f;
+  font-family: "Noto Sans Bold";
+  font-weight: 700; }
+  .h1__white {
+    color: #ffffff; }
+  .h1__uppercase {
+    text-transform: uppercase; }
+  .h1__xs {
+    font-size: 1.8229vw; }
+  .h1__s {
+    font-size: 2.2396vw; }
+  .h1__m {
+    font-size: 2.6042vw; }
+  .h1__l {
+    font-size: 3.125vw; }
+  .h1__xl {
+    font-size: 3.6458vw; }
+
+.link {
+  color: #e7552f !important;
+  font-size: 1.4063vw;
+  position: relative;
+  padding-right: 0.7813vw; }
+  .link:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0.4167vw;
+    background: url("../icon/link.svg") center no-repeat;
+    background-size: cover;
+    width: 0.4688vw;
+    height: 0.8333vw; }
+  .link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: -0.2604vw;
+    height: 0.1042vw;
+    transition: width 0.3s ease-in-out;
+    background: #e7552f; }
+  .link:hover:after {
+    width: 100%; }
+
+.wrap {
+  display: flex;
+  flex-direction: unset;
+  max-width: 100vw;
+  height: 100%; }
+
+.side {
+  max-width: 50%;
+  width: 50%;
+  position: relative; }
+  .side__text {
+    padding-left: 7.8125vw;
+    display: flex;
+    align-items: center; }
+  .side__photos {
+    display: flex;
+    align-items: center; }
+  .side__bottom-center {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; }
+
+.videophones {
+  height: 50.5729vw;
+  background: url("../img/videophones/videophones.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 4.6354vw;
+  margin-bottom: 7.8125vw; }
+  .videophones__h {
+    text-align: center; }
+  .videophones__h-top {
+    margin-bottom: 0.8854vw; }
+  .videophones__h-bottom {
+    margin-bottom: 1.5625vw; }
+
+.smile {
+  height: 53.3vw; }
+  .smile__img {
+    position: absolute;
+    right: 0;
+    width: 54.1667vw; }
+  .smile .h1 {
+    position: relative; }
+    .smile .h1 svg {
+      width: 2.6563vw;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 0.8854vw; }
+
+.magic {
+  height: 61.3542vw;
+  margin-bottom: 10vw; }
+  .magic__img {
+    position: absolute; }
+    .magic__img_front {
+      left: -7.6042vw;
+      top: 21.3542vw;
+      width: 49.7917vw; }
+    .magic__img_back {
+      width: 45.2604vw;
+      right: -1.9792vw;
+      top: 12.6563vw; }
+
+.freedom {
+  height: 56.875vw;
+  margin-bottom: 20vw; }
+  .freedom__img {
+    position: absolute; }
+    .freedom__img_front {
+      width: 45.4687vw;
+      right: -2.6563vw;
+      top: 21.3542vw; }
+    .freedom__img_back {
+      width: 48.5938vw;
+      left: -5.0521vw;
+      top: 12.6563vw; }
+
+.fantasy {
+  height: 53.3646vw;
+  margin-bottom: 11.9792vw; }
+  .fantasy .side__text {
+    padding-left: 7.2917vw; }
+  .fantasy__h {
+    width: 28.6458vw; }
+  .fantasy__cont {
+    height: 100%;
+    position: relative;
+    transform: translateX(0.6771vw) rotate(30deg); }
+  .fantasy__img {
+    position: absolute;
+    width: 10.4167vw; }
+    .fantasy__img_1 {
+      top: 23.1771vw; }
+    .fantasy__img_2 {
+      top: 30.2083vw;
+      left: 10.4167vw; }
+    .fantasy__img_3 {
+      top: 16.6667vw;
+      left: 20.5729vw; }
+    .fantasy__img_4 {
+      top: 25.5208vw;
+      left: 30.9896vw; }
+    .fantasy__img_5 {
+      top: 0;
+      left: 30.9896vw; }
+    .fantasy__img_6 {
+      top: 16.6667vw;
+      left: 41.4063vw; }
+
+.legend {
+  height: 50.5729vw;
+  background: url("../img/videophones/legend-bg.jpg") center no-repeat;
+  background-size: cover;
+  padding-left: 4.5313vw;
+  padding-right: 1.0417vw; }
+  .legend__h {
+    max-width: 29.375vw; }
+  .legend__img {
+    width: 20.8854vw; }
+
+.mask-ip {
+  margin-bottom: 9.375vw; }
+  .mask-ip .side {
+    text-align: center;
+    padding-top: 3.5417vw;
+    height: 49.4792vw;
+    width: 49.47915%; }
+  .mask-ip .wrap {
+    justify-content: space-between;
+    padding-top: 1.0417vw; }
+
+.mask {
+  background: url("../img/videophones/mask-bg.png") center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-color: #f1f1f1; }
+  .mask__h {
+    width: 35.5729vw;
+    margin-left: auto;
+    margin-right: auto; }
+  .mask__img {
+    position: absolute;
+    bottom: -0.8vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18.3333vw; }
+
+.ip {
+  background: url("../img/videophones/ip-bg.png") left no-repeat;
+  background-size: contain;
+  background-color: #f1f1f1;
+  overflow: hidden; }
+  .ip__h {
+    width: 32.6771vw;
+    margin-left: auto;
+    margin-right: auto; }
+  .ip .h1 {
+    position: relative; }
+    .ip .h1 svg {
+      width: 1.9792vw;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 0.8333vw; }
+  .ip__img {
+    position: absolute;
+    bottom: 3.2708vw;
+    right: -5.0521vw;
+    width: 34.9479vw; }
+
+.tabs {
+  text-align: center;
+  margin-bottom: 9.6354vw;
+  position: relative; }
+  .tabs:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 10.4167vw);
+    height: calc(100% + 8.4896vw);
+    background: #fafafa;
+    z-index: -1; }
+  .tabs__h {
+    text-align: center;
+    margin-bottom: 2.5vw; }
+  .tabs__ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 63.3854vw;
+    justify-content: space-between;
+    margin-bottom: 0.8854vw; }
+  .tabs__item {
+    color: #1d1d1f;
+    font-size: 1.0417vw;
+    line-height: 1.5vw;
+    cursor: pointer; }
+  .tabs__line-cont {
+    width: 63.3854vw;
+    height: 0.1042vw;
+    position: relative;
+    background: #e0e0e0;
+    margin-left: auto;
+    margin-right: auto; }
+  .tabs__line {
+    height: 0.1042vw;
+    width: 5.8854vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #e7552f;
+    transition: width 0.5s ease-in-out, transform 0.5s ease-in-out; }
+  .tabs__photo {
+    height: 31.5104vw;
+    text-align: center;
+    position: relative; }
+    .tabs__photo img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%; }
+    .tabs__photo .link {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%); }
+  .tabs__cont-photo {
+    transition: opacity 0.25s ease-in-out; }
+
+/*# sourceMappingURL=videophones.css.map */
